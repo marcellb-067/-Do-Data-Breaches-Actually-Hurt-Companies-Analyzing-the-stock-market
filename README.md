@@ -1,4 +1,4 @@
-# -Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market
+# Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market
 Marcell Brown 
 Intro to data science - ECON 4970
 Georgia state university 
@@ -45,17 +45,16 @@ This gave me 6 companies to analyze:
 
 ## What I Did
 
-Using R, I calculated the average stock price for each company 
-in the 30 days before and 30 days after their breach date. This 
-allowed me to measure the immediate financial impact. I also 
-tracked how long it took each company's stock to return to its 
-pre-breach price, which I defined as "recovery."
+Using R, I calculated the average stock price for each company in the 30 days before and 30 days after their breach date. This allowed me to measure the immediate financial impact. I also tracked how long it took each company's stock to return to its pre-breach price, which I defined as "recovery."
 
-I then built three visualizations to help answer my research 
-questions.
-
+I then built three visualizations to help answer my research questions.
 ## Figures and Analysis
 
 ### Figure 1: Does Breach Size Actually Matter?
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/breach_size_vs_stock_drop.png">
+This scatter plot compares the number of records exposed in each breach to the percentage change in stock price afterward. If breach size drove stock drops, we would expect to see a clear downward trend  bigger breaches causing bigger drops. Instead, the data shows almost no relationship. Marriott and Meta both lost over 500 million records, yet Marriott's stock fell 10.77% while Meta's rose 10.77%.
+
+### Figure 2-6: Stock Price Before and After Each Breach
+These line charts show each company's stock price from 180 days before to 365 days after their breach date. The red dashed line marks the exact breach date so you can see how the stock reacted in real time.
 
 
