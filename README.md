@@ -54,4 +54,8 @@ pre-breach price, which I defined as "recovery."
 I then built three visualizations to help answer my research 
 questions.
 
+## Figures and Analysis
+
+### Figure 1: Does Breach Size Actually Matter?
+
 
