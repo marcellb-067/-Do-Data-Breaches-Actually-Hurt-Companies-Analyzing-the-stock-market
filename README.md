@@ -96,4 +96,4 @@ The biggest takeaway from this analysis is that for large, publicly traded compa
 - `breach_size_vs_stock_drop.png` — Breach size scatter plot
 
 ## Tools Used
-- **R** with packages: `dplyr`, `ggplot2`, `scales`
+- **R** with packages: `dplyr`, `ggplot2`, `scales`, `lubridate`
