@@ -18,7 +18,7 @@ This question motivated me to dig into the data. As someone interested in both f
 2. Does company size (market cap) affect how quickly a company recovers?
 3. Is there a relationship between how many records were stolen and how badly the stock price dropped?
 
-## Where I Found My Data
+## Where I Found My Data/ Dataset
 
 I used two datasets from Kaggle:
 
@@ -29,8 +29,29 @@ I used two datasets from Kaggle:
 - **Stock Price Data**: [Massive Yahoo Finance Dataset]
 (https://www.kaggle.com/datasets/iveeaten3223times/massive-yahoo-finance-dataset)
   This dataset contains daily stock prices for 491 of the world's largest publicly traded companies from 2018 to 2023, sourced from Yahoo Finance.
-  
-I matched companies that appeared in both datasets — meaning they were both publicly traded AND experienced a major data breach between 2018 and 2023.
+I used both websites to download my dataset and read them into R studio.
+I matched companies that appeared in both datasets  meaning they were both publicly traded AND experienced a major data breach between 2018 and 2023.
 
-## The dataset
+This gave me 6 companies to analyze:
+
+| Company | Ticker | Breach Date | Records Exposed |
+|---------|--------|-------------|-----------------|
+| Equifax | EFX | July 2019 | 147 million |
+| Marriott | MAR | November 2018 | 500 million |
+| Meta | META | April 2021 | 533 million |
+| Uber | UBER | September 2022 | 57 million |
+| Capital One | COF | July 2019 | 106 million |
+| T-Mobile | TMUS | August 2021 | 54 million |
+
+## What I Did
+
+Using R, I calculated the average stock price for each company 
+in the 30 days before and 30 days after their breach date. This 
+allowed me to measure the immediate financial impact. I also 
+tracked how long it took each company's stock to return to its 
+pre-breach price, which I defined as "recovery."
+
+I then built three visualizations to help answer my research 
+questions.
+
 
