@@ -57,4 +57,43 @@ This scatter plot compares the number of records exposed in each breach to the p
 ### Figure 2-6: Stock Price Before and After Each Breach
 These line charts show each company's stock price from 180 days before to 365 days after their breach date. The red dashed line marks the exact breach date so you can see how the stock reacted in real time.
 
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/EFX_breach_impact.png">
+(Equifax's stock actually rose slightly after the 2019 breach announcement, likely because the market had already priced in the risk from the original 2017 breach.)
 
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/COF_breach_impact.png">
+(Capital One fell 5.39% after their 2019 breach, recovering within 2 days. The relatively quick recovery may reflect investor confidence in the company's response and remediation efforts.)
+
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/MAR_breach_impact.png"> 
+(Marriott saw the sharpest immediate drop of any company in the dataset, falling nearly 11% in the 30 days after their 2018 breach was announced.)
+
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/META_breach_impact.png">
+(Even though META exposed 533 million users' data, the largest breach in the dataset Meta's stock rose over 10% in the following month, suggesting the market had little concern about the long-term impact.)
+
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/TMUS_breach_impact.png"> 
+(T-Mobile had the longest recovery of any company in the dataset at 353 days (nearly a full year). This may reflect the fact that T-Mobile had experienced multiple breaches in prior years, diminishing investor confidence.
+
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/UBER_breach_impact.png">
+(Uber dropped 6.29% immediately after their 2022 breach but recovered within a single trading day, showing great resilience.)
+
+### Figure 7: How long does it take to recover?
+<img src = "https://github.com/marcellb-067/-Do-Data-Breaches-Actually-Hurt-Companies-Analyzing-the-stock-market/blob/main/recovery_by_market_cap.png">
+This bar chart tells us that while most companies recovered within days, T-Mobile stood out dramatically taking 353 days to return to its pre-breach stock price. Marriott came in second at 81 days. The remaining four companies recovered in 2 days or less, which raises an important question: are markets simply not punishing companies for data breaches?
+
+## What I learned/The big takaway
+The biggest takeaway from this analysis is that for large, publicly traded companies, data breaches barely seem to matter to the stock market. Four out of the six companies I analyzed recovered their pre breach stock price within two days. Two days. Uber dropped 6% and bounced back the next trading day. Capital One fell 5% and recovered in 48 hours. Meta exposed over 500 million users' personal data and their stock actually went up the following month. It is hard not to look at these numbers and feel like corporations are simply not being held accountable for failing to protect people's data.The two outliers in the data  Marriott and T-Mobile  were interesting for different reasons. Marriott took 81 days to recover, which was the second longest in the dataset. Their breach was one of the largest in history at 500 million records, and the fact that it involved a hotel chain where customers store passport numbers and travel information may have made investors more nervous than usual. T-Mobile was the most striking case, taking 353 days to recover. After doing more research I found that T-Mobile had experienced several other breaches in the years leading up to the 2021 incident, which likely explains why investors were less forgiving. When a company keeps getting hacked, eventually the market loses patience.Overall this project taught me that the stock market is not always the best judge of corporate accountability. Large companies have the resources, brand recognition, and investor loyalty to weather a data breach without serious financial consequences. 
+
+## Files in This Repository
+- `breach_stock_analysis.R` — All R code used for this analysis
+- `breaches.csv` — Data breach dataset from Kaggle
+- `stock_details_5_years.csv` — Stock price dataset from Kaggle
+- `EFX_breach_impact.png` — Equifax stock chart
+- `MAR_breach_impact.png` — Marriott stock chart
+- `META_breach_impact.png` — Meta stock chart
+- `UBER_breach_impact.png` — Uber stock chart
+- `COF_breach_impact.png` — Capital One stock chart
+- `TMUS_breach_impact.png` — T-Mobile stock chart
+- `recovery_by_market_cap.png` — Recovery time bar chart
+- `breach_size_vs_stock_drop.png` — Breach size scatter plot
+
+## Tools Used
+- **R** with packages: `dplyr`, `ggplot2`, `scales`
